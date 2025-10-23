@@ -1,5 +1,5 @@
 # Aphotecary Diary Theme
-    
+
 Aphotecary Diary VS Code theme
 
 ## Theme previews:
@@ -64,6 +64,13 @@ This repo uses `vsce` for packaging and publishing. The `package.json` includes 
 
 - `npm run package` — generates the `.vsix` package via `vsce`.  
 - `npm run publish` — publishes the extension to the Marketplace (requires a configured publisher and a Personal Access Token).
+
+Example publish steps (local):
+
+1. Install dev deps: `npm install`
+2. Package: `npm run package` (creates `apothecary-diary-theme-<version>.vsix`)
+3. (Optional) Install locally: `code --install-extension apothecary-diary-theme-<version>.vsix`
+4. Publish: `npm run publish` (requires `vsce` login and PAT configured)
 
 Before publishing, ensure:
 

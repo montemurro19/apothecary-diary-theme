@@ -1,18 +1,27 @@
 {
-  "name": "aphotecary-diary-theme",
-  "displayName": "Aphotecary Diary Theme",
+  "name": "apothecary-diary-theme",
+  "displayName": "Apothecary Diary Theme",
   "description": "Themes for VSCode inspired by the aesthetics of apothecary diaries.",
-  "version": "0.0.1",
-  "publisher": "montemurro19",
+  "version": "0.1.0",
+  "icon": "images/icon.png",
+  "publisher": "apothecary-diary-theme",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/montemurro19/apothecary-diary-theme.git"
   },
   "engines": {
-    "vscode": "^1.100.0"
+    "vscode": "^1.60.0"
   },
+  "keywords": ["theme", "vscode", "apothecary", "diary", "jinshi", "maomao"],
   "categories": [
     "Themes"
+  ],
+  "files": [
+    "themes/**",
+    "images/**",
+    "README.md",
+    "LICENSE"
   ],
   "galleryBanner": {
     "color": "#F8F7F3",
@@ -24,7 +33,7 @@
   },
   "scripts": {
     "package": "npx vsce package",
-    "install:theme": "npx vsce package && code --install-extension aphotecary-diary-theme-$(node -p \"require('./package.json').version\").vsix",
+    "install:theme": "npx vsce package && code --install-extension apothecary-diary-theme-$(node -p \"require('./package.json').version\").vsix",
     "publish": "npx vsce publish"
   },
   "contributes": {
